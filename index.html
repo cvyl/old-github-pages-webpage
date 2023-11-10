@@ -8,14 +8,11 @@
     <meta name="description" content="Personal webpage of ly-nld">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="white" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
     <meta id="site_root_url" data="/">
     <meta id="default-theme" data="light">
     <meta name="renderer" content="webkit">
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.webp">
-    <link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
-    <meta name="generator" content="Hexo 6.3.0">
     <!-- Add Tailwind CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Custom Styles -->
@@ -54,7 +51,7 @@
           <p class="text-gray-600">Programmer | Open Source Enthusiast</p>
         </div>
       </div>
-      <p class="text-gray-700 mb-4 fade-in" id="aboutMeText">Hello! I'm a programmer and open source enthusiast.</p>
+      <p class="text-gray-700 mb-4 fade-in" id="aboutMeText">Hello! I'm a programmer and open-source enthusiast.</p>
       <div class="flex mb-4">
         <!-- GitHub SVG Icon -->
         <a href="https://github.com/ly-nld" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-gray-900 mx-2">
@@ -76,7 +73,7 @@
       </div>
     </div>
     <script>
-      // Add a script to trigger the fade-in effect after the content is loaded.
+      // Add a script to trigger the fade-in effect after loading the content.
       document.addEventListener('DOMContentLoaded', function() {
         const cardContainer = document.getElementById('cardContainer');
         cardContainer.classList.add('fade-in');
@@ -91,10 +88,10 @@
         setTimeout(() => {
           switch (language) {
             case 'en':
-              aboutMeText.innerText = "Hello! I'm a programmer and open source enthusiast.";
+              aboutMeText.innerText = "Hello! I'm a programmer and open-source enthusiast.";
               break;
             case 'nl':
-              aboutMeText.innerText = "Hallo! Ik ben een programmeur en open source liefhebber.";
+              aboutMeText.innerText = "Hallo! Ik ben een programmeur en open-source liefhebber.";
               break;
             case 'ja':
               aboutMeText.innerText = "こんにちは！私はプログラマーでオープンソース愛好者です。";
