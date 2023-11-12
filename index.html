@@ -29,7 +29,7 @@
     </style>
   </head>
   <body class="bg-gray-100 h-screen flex items-center justify-center overflow-hidden">
-    <div class="bg-white shadow-lg rounded-lg p-8 opacity-0 transition-opacity ease-in-out duration-1000 max-w-md max-h-[70vh] overflow-auto relative fade-in" id="cardContainer">
+      <div class="bg-white shadow-lg rounded-lg p-8 opacity-0 transition-opacity ease-in-out duration-1000 max-w-md max-h-[70vh] overflow-auto relative fade-in" id="cardContainer">
       <!-- Globe Icon -->
       <div class="absolute top-2 right-2">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-600 cursor-pointer" id="languageIcon">
@@ -80,10 +80,15 @@
     </div>
     <script>
       // Add a script to trigger the fade-in effect after loading the content.
-      document.addEventListener('DOMContentLoaded', function() {
-        const cardContainer = document.getElementById('cardContainer');
+      document.addEventListener('DOMContentLoaded', function () {
+      const cardContainer = document.getElementById('cardContainer');
+
+      // Adding a delay of 100 milliseconds before adding the fade-in class
+      setTimeout(() => {
         cardContainer.classList.add('fade-in');
+      }, 100);
       });
+
 
       // Function to change the language and update the about me text with fade-in/out effect
       function changeLanguage(language) {
