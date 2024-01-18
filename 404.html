@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl_NL">
+  <head>
+    <meta charset="utf-8">
+    <title>@ly-nld</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="css/tailwind.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+      body {
+        background-color: #f7fafc;
+      }
+
+      .error-container {
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: auto;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .fade-in {
+        opacity: 1;
+      }
+
+      .fade-out {
+        opacity: 0;
+      }
+
+      .error-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #e53e3e;
+        margin-bottom: 1rem;
+      }
+
+      .error-description {
+        font-size: 1.25rem;
+        color: #4a5568;
+        margin-bottom: 1.5rem;
+      }
+
+      .return-home-link {
+        color: #3182ce;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .return-home-link:hover {
+        color: #2c5282;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 h-screen flex items-center justify-center overflow-hidden">
+    <!-- 404 Error Page -->
+    <div class="error-container" id="cardContainer">
+      <!-- Content for 404 Error Page -->
+      <h1 class="error-title">404 - Not Found</h1>
+      <p class="error-description fade-in" id="aboutMeText">The page you are looking for might be under construction or does not exist.</p>
+      <p class="text-sm text-gray-600 mb-4 fade-in">
+        Return to <a href="/" class="return-home-link">home</a>.
+      </p>
+    </div>
+
+    <script>
+      // Add a script to trigger the fade-in effect after loading the content.
+      document.addEventListener('DOMContentLoaded', function () {
+        const cardContainer = document.getElementById('cardContainer');
+
+        // Add 'fade-in' class to trigger the fade-in effect
+        cardContainer.classList.add('fade-in');
+      });
+    </script>
+  </body>
+</html>
